@@ -1,0 +1,40 @@
+---
+title: "DDP Week 3 Assignment"
+author: "N Selva Kumar"
+date: "9/24/2020"
+output: ioslides_presentation
+---
+
+## Load libraries
+
+```{r library}
+library(plotly)
+data("mtcars")
+```
+## Info About the Dataset (mtcars)
+```{r mtcars}
+str(mtcars)
+```
+
+## Info About the Dataset (mtcars) Part 2
+``` {r mtcars part 2}
+summary(mtcars)
+```
+
+
+
+```{r plot,message=FALSE}
+p <- plot_ly(data=mtcars, 
+             x = ~wt, 
+             y = ~mpg,
+             color = ~gear,
+             type = 'scatter') %>%
+    layout(title = " Plot of mpg against wt colored by gear",
+           xaxis=list(title="wt"),
+           yaxis=list(title="mpg"))
+
+```
+
+## Slide with Plot
+`r p`
+

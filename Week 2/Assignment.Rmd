@@ -1,0 +1,17 @@
+---
+title: "DDP Week 2 Assignment"
+author: "N Selva Kumar"
+date: "9/24/2020"
+output: html_document
+---
+
+### Submission
+
+```{r Map}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=-13.1631, lng=-72.5450, popup = "Machu Picchu")
+
+my_map
+```
