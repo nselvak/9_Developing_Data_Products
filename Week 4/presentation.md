@@ -1,0 +1,40 @@
+Data Products
+========================================================
+author: N SELVA KUMAR
+date: 27/9/2020
+autosize: False
+
+ Course Project
+========================================================
+- Final Assignment for the Course 
+- Course is about Developing Data Products
+- Main objective of the project is to write a Shiny application
+
+
+Shiny Application
+========================================================
+- In this project a Shiny Application was written
+- Objective of the application: to calculate the BMI of a person
+- Motivation of the writing the application was health issues around the world.
+
+
+R code 
+========================================================
+- Code calculates the Body Mass Index
+- Parameters used are height and weight
+
+
+```r
+height <- 180
+weight <- 90
+BMI <- weight / (height/100 * height/100)
+
+BMI
+```
+
+```
+[1] 27.77778
+```
+
+Thank You
+========================================================
